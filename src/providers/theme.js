@@ -20,12 +20,14 @@ const MaterialThemeProvider = ({ children }) => {
             },
         },
         fontSize: {
-            A1: 20
+            xxl: 60,
+            xl: 20,
         },
         colors: {
-            white: 'ffffff',
-            black: '000000',
-            yellow: '#FFCE31'
+            white: '#ffffff',
+            black: '#000000',
+            yellow: '#FFCE31',
+            gray: 'rgba(0, 1, 3, 0.7)'
         }
     }
 

@@ -13,6 +13,7 @@ const Header = () => {
                 position="static"
                 sx={{
                     background: 'transparent',
+                    boxShadow: 'none',
                     '& > div': {
                         px: 15,
                         py: 5
@@ -22,15 +23,17 @@ const Header = () => {
                 <Toolbar>
                     <Stack sx={{ flexGrow: 1 }} direction='row' spacing={1}>
                         <HeaderIcon />
-                        <Typography sx={{ fontSize: theme => theme.fontSize.A1, fontWeight: 600, fontFamily: 'Inter' }}>
+                        <Typography sx={{ fontSize: theme => theme.fontSize.xl, fontWeight: 600, fontFamily: 'Inter' }}>
                             StorageConnect
                         </Typography>
                     </Stack>
-                    <HeaderButton>Active Listings</HeaderButton>
-                    <HeaderButton>Sell your Self Storage</HeaderButton>
-                    <HeaderButton>Free Evaluation</HeaderButton>
-                    <HeaderButton>Learn</HeaderButton>
-                    <HeaderButton>Contact</HeaderButton>
+                    <Stack direction='row' spacing={3}>
+                        <HeaderButton>Active Listings</HeaderButton>
+                        <HeaderButton>Sell your Self Storage</HeaderButton>
+                        <HeaderButton>Free Evaluation</HeaderButton>
+                        <HeaderButton>Learn</HeaderButton>
+                        <HeaderButton>Contact</HeaderButton>
+                    </Stack>
                 </Toolbar>
             </AppBar>
         </Stack>
