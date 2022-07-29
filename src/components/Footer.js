@@ -213,6 +213,8 @@ const Footer = () => {
                     </Menu>
                 </Stack>
             </Stack>
+            <img width={190} height={190} src={require('../assets/imgs/circles/Rectangle.png').default} style={{ position: 'absolute', left: 30 }} />
+            <img width={190} height={190} src={require('../assets/imgs/circles/Rectangle.png').default} style={{ position: 'absolute', right: 30 }} />
         </Stack>
     )
 }
