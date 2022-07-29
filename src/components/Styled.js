@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "@mui/material/Button";
+import IconButton from '@mui/material/IconButton';
 import { styled } from '@mui/material/styles';
 
 export const HeaderButton = styled((props) => (
@@ -51,7 +52,8 @@ export const MButton = styled((props) => (
     fontSize: theme.fontSize.sm,
     fontWeight: 500,
     height: 50,
-    width: '80%',
+    paddingLeft: 60,
+    paddingRight: 60,
     '&:hover': {
         background: theme.colors.blue
     }
@@ -68,5 +70,19 @@ export const SButton = styled((props) => (
     width: '80%',
     '&:hover': {
         background: theme.colors.blue
+    }
+}))
+
+export const CIconButton = styled((props) => (
+    <IconButton variant='inherit' {...props} />
+))(({ theme }) => ({
+    color: theme.colors.white,
+    background: theme.colors.blue,
+    '&:hover': {
+        background: theme.colors.blue
+    },
+    '& svg': {
+        width: 20,
+        height: 20
     }
 }))
