@@ -22,6 +22,7 @@ export const XButton = styled((props) => (
     fontSize: theme.fontSize.lg,
     fontWeight: 500,
     height: 60,
+    padding: '0px 40px',
     '&:hover': {
         background: theme.colors.yellow
     }
