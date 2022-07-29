@@ -12,7 +12,11 @@ import { CardA_info } from "../../config";
 
 const Slider = () => {
     return (
-        <Stack>
+        <Stack
+            sx={{
+                pb: '50px !important'
+            }}
+        >
             <Stack alignItems='center' spacing={1}>
                 <Typography
                     sx={{
