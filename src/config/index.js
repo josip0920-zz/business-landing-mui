@@ -152,3 +152,9 @@ export const CardC_info = [
         ownerPhoto: 'profile.png',
     },
 ]
+
+export const MultiLanguage = [
+    { id: 'eng', name: 'English - En' },
+    { id: 'ita', name: 'Italiano - It' },
+    { id: 'spa', name: 'Spanish - Sp' },
+]
