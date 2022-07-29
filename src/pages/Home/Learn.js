@@ -52,6 +52,8 @@ const Learn = () => {
             <Stack alignItems='center'>
                 <XLButton>Explore the Learning Section</XLButton>
             </Stack>
+            <img width={80} height={172} src={require('../../assets/imgs/circles/Ellipse4.png').default} style={{ position: 'absolute', right: 0, marginTop: 100 }} />
+            <img width={70} height={250} src={require('../../assets/imgs/circles/Ellipse5.png').default} style={{ position: 'absolute', left: 0, marginTop: 500 }} />
         </Stack>
     )
 }
