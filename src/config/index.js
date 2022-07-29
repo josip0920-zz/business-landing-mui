@@ -116,3 +116,39 @@ export const CardB_info = [
         occupancy: 50
     },
 ]
+
+export const CardC_info = [
+
+    {
+        name: 'Everything you need to know about how to buy a Self Storage',
+        photo: "image 17.png",
+        time: '5hrs ago',
+        status: 'Buy',
+        owner: 'Raza',
+        ownerPhoto: 'profile.png',
+    },
+    {
+        name: 'Everything you need to know about how to buy a Self Storage',
+        photo: "image 16.png",
+        time: '2days ago',
+        status: 'Operate',
+        owner: 'Raza',
+        ownerPhoto: 'profile.png',
+    },
+    {
+        name: 'Everything you need to know about how to buy a Self Storage',
+        photo: "image 7.png",
+        time: '3days ago',
+        status: 'Sell',
+        owner: 'Raza',
+        ownerPhoto: 'profile.png',
+    },
+    {
+        name: 'Everything you need to know about how to buy a Self Storage',
+        photo: "image 19.png",
+        time: '5hrs ago',
+        status: 'Buy',
+        owner: 'Raza',
+        ownerPhoto: 'profile.png',
+    },
+]

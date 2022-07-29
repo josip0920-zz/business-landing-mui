@@ -1,7 +1,7 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { MButton } from "./Styled";
+import { SButton, MButton } from "./Styled";
 
 export const CardA = ({ data }) => {
 
@@ -46,6 +46,71 @@ export const CardA = ({ data }) => {
             </Stack>
             <Stack alignItems='center'>
                 <MButton>View More Detail</MButton>
+            </Stack>
+        </Stack>
+    )
+}
+
+export const CardB = ({ data }) => {
+
+    return (
+        <Stack
+            sx={{
+                background: theme => theme.colors.cardBg,
+                p: '5px',
+                borderRadius: '15px',
+                width: '100%',
+                '& .cardImg': {
+                    height: theme => theme.isTablet ? 200 : 250,
+                    width: '100%',
+                    borderRadius: '10px 10px 0px 0px'
+                }
+            }}
+            spacing={5}
+        >
+            <img className="cardImg" src={require(`../assets/imgs/cards/${data.photo}`).default} />
+            <Stack sx={{ px: 1.6, pb: 3 }} spacing={3}>
+                <Typography sx={{ fontSize: theme => theme.fontSize.lg, fontWeight: 600 }}>{data.name}</Typography>
+                <Stack
+                    direction='row'
+                >
+                    <Stack direction='row' alignItems="center" spacing={0.5} sx={{ width: '40%' }}>
+                        <img width='22' height='22' src={require(`../assets/imgs/icons/time.svg`).default} />
+                        <Typography
+                            sx={{
+                                fontSize: theme => theme.fontSize.xm,
+                                overflow: 'hidden',
+                                textOverflow: 'ellipsis',
+                                whiteSpace: 'nowrap'
+                            }}
+                        >{data.time}</Typography>
+                    </Stack>
+                    <Stack direction='row' alignItems="center" spacing={0.5} sx={{ width: '30%' }}>
+                        <img width='20' height='20' src={require(`../assets/imgs/icons/pen.svg`).default} />
+                        <Typography
+                            sx={{
+                                fontSize: theme => theme.fontSize.xm,
+                                overflow: 'hidden',
+                                textOverflow: 'ellipsis',
+                                whiteSpace: 'nowrap'
+                            }}
+                        >{data.status}</Typography>
+                    </Stack>
+                    <Stack direction='row' alignItems="center" spacing={0.5} sx={{ width: '30%' }}>
+                        <img width='25' height='25' src={require(`../assets/imgs/${data.ownerPhoto}`).default} />
+                        <Typography
+                            sx={{
+                                fontSize: theme => theme.fontSize.xm,
+                                overflow: 'hidden',
+                                textOverflow: 'ellipsis',
+                                whiteSpace: 'nowrap'
+                            }}
+                        >{data.owner}</Typography>
+                    </Stack>
+                </Stack>
+                <Stack alignItems='center'>
+                    <SButton>Read More</SButton>
+                </Stack>
             </Stack>
         </Stack>
     )

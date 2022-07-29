@@ -1,9 +1,11 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { XButton } from "../../components/Styled";
 
 const Buy = () => {
+    const tablet = useMediaQuery('(min-width:1400px)');
 
     return (
         <Stack
@@ -21,9 +23,9 @@ const Buy = () => {
                 justifyContent="end"
                 alignItems='start'
             >
-                <img src={require('../../assets/imgs/bg/pngwing 3.png').default} width="90%" style={{ marginLeft: -50 }} />
+                <img src={require('../../assets/imgs/bg/pngwing 3.png').default} width="90%" style={{ marginLeft: tablet ? -50 : -20 }} />
             </Stack>
-            <Stack justifyContent='center' sx={{ width: '50%' }} spacing={8}>
+            <Stack justifyContent='center' sx={{ width: '50%', mb: 10 }} spacing={8}>
                 <Stack spacing={2}>
                     <Typography
                         sx={{

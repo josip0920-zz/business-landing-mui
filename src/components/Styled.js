@@ -56,3 +56,17 @@ export const MButton = styled((props) => (
         background: theme.colors.blue
     }
 }))
+
+export const SButton = styled((props) => (
+    <Button variant='inherit' {...props} />
+))(({ theme }) => ({
+    color: theme.colors.white,
+    background: theme.colors.blue,
+    fontSize: theme.fontSize.sm,
+    fontWeight: 500,
+    height: 40,
+    width: '80%',
+    '&:hover': {
+        background: theme.colors.blue
+    }
+}))

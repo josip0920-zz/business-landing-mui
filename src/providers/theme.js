@@ -35,7 +35,8 @@ const MaterialThemeProvider = ({ children }) => {
             lxl: 25,
             lg: 20,
             md: 18,
-            sm: 16
+            sm: 16,
+            xm: 14
         },
         colors: {
             white: '#ffffff',

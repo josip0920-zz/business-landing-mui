@@ -8,6 +8,7 @@ import Slider from "./Slider";
 import ActiveStorage from "./ActiveStorage";
 
 import './index.css';
+import Learn from "./Learn";
 
 const Home = () => {
     return (
@@ -23,6 +24,7 @@ const Home = () => {
             <ActiveStorage />
             <Sell />
             <Buy />
+            <Learn />
         </Stack>
     )
 }
