@@ -25,7 +25,7 @@ const Buy = () => {
             >
                 <img src={require('../../assets/imgs/bg/pngwing 3.png').default} width="90%" style={{ marginLeft: tablet ? -50 : -20 }} />
             </Stack>
-            <Stack justifyContent='center' sx={{ width: '50%', mb: 10 }} spacing={8}>
+            <Stack justifyContent='center' sx={{ width: '50%', mb: 15 }} spacing={8}>
                 <Stack spacing={2}>
                     <Typography
                         sx={{
