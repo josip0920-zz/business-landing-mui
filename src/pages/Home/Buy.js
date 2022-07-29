@@ -4,19 +4,27 @@ import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { XButton } from "../../components/Styled";
 
-const Sell = () => {
+const Buy = () => {
     const tablet = useMediaQuery('(min-width:1400px)');
 
     return (
         <Stack
             direction="row"
             sx={{
-                background: theme => theme.colors.sellBg,
                 pb: '0px !important',
                 borderBottomRightRadius: 300,
                 overflow: 'hidden'
             }}
         >
+            <Stack
+                sx={{
+                    width: '50%',
+                }}
+                justifyContent="end"
+                alignItems='start'
+            >
+                <img src={require('../../assets/imgs/bg/pngwing 3.png').default} width="90%" style={{ marginLeft: -50 }} />
+            </Stack>
             <Stack justifyContent='center' sx={{ width: '50%' }} spacing={8}>
                 <Stack spacing={2}>
                     <Typography
@@ -26,7 +34,7 @@ const Sell = () => {
                             color: theme => theme.colors.darkBlue
                         }}
                     >
-                        Do you have a Self Storage for Sale?
+                        Do you want to buy a Self Storage?
                     </Typography>
                     <Typography
                         sx={{
@@ -46,21 +54,11 @@ const Sell = () => {
                         }
                     }}
                 >
-                    Sell Your Self Storage
+                    Buy a Self Storage
                 </XButton>
-            </Stack>
-            <Stack
-                sx={{
-                    width: '50%',
-                }}
-                justifyContent="end"
-                alignItems='end'
-            >
-                <img src={require('../../assets/imgs/bg/pngwing.png').default} width="80%" style={{ marginRight: 10 }} />
-                <img src={require('../../assets/imgs/bg/pngwing2.png').default} height={tablet ? 430 : 320} width="100%" style={{ marginTop: tablet ? -430 : -320 }} />
             </Stack>
         </Stack>
     )
 }
 
-export default Sell;
+export default Buy;

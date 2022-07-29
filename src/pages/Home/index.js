@@ -1,6 +1,7 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
 
+import Buy from "./Buy";
 import Main from "./main";
 import Sell from "./Sell";
 import Slider from "./Slider";
@@ -21,6 +22,7 @@ const Home = () => {
             <Slider />
             <ActiveStorage />
             <Sell />
+            <Buy />
         </Stack>
     )
 }
