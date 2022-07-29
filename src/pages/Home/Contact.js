@@ -20,11 +20,12 @@ const Contact = () => {
                 direction='row'
                 spacing={12}
                 sx={{
-                    background: theme => theme.colors.white,
+                    background: 'rgb(255 255 255 / 90%)',
                     boxShadow: '0px 30px 40px rgba(24, 73, 198, 0.1)',
                     width: 'fit-content',
                     p: 12,
-                    borderRadius: '12px'
+                    borderRadius: '12px',
+                    zIndex: 10
                 }}
             >
                 <Stack spacing={1}>
@@ -65,6 +66,7 @@ const Contact = () => {
                     </XButton>
                 </Stack>
             </Stack>
+            <img width={110} height={110} src={require('../../assets/imgs/circles/Ellipse6.png').default} style={{ position: 'absolute', marginLeft: -500, marginTop: 220 }} />
         </Stack>
     )
 }
