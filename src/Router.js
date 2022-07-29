@@ -7,6 +7,7 @@ import { Router, Route, Switch } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
 const Home = lazy(() => import("./pages/Home/index"));
+const Footer = lazy(() => import("./components/Footer"));
 
 const history = createBrowserHistory({
     basename: "",
@@ -22,6 +23,7 @@ const AppRouter = () => {
                         <Route path="/" exact component={Home} />
                     </Layout>
                 </Switch>
+                <Footer />
             </Suspense>
         </Router>
     )
