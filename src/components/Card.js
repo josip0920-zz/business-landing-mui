@@ -13,7 +13,7 @@ export const CardA = ({ data }) => {
                 borderRadius: '10px',
                 width: '100%',
                 '& .cardImg': {
-                    height: theme => theme.isTablet ? 280 : 400,
+                    height: theme => theme.isTablet ? 280 : 350,
                     width: '100%',
                     borderRadius: 4
                 }
