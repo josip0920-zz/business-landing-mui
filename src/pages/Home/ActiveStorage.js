@@ -12,7 +12,6 @@ const ActiveStorage = () => {
     return (
         <Stack
             sx={{
-                p: 10,
                 backgroundImage: `url(${require('../../assets/imgs/bg/Rectangle_8.png').default})`,
                 backgroundSize: '100% 100%'
             }}
