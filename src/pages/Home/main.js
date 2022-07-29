@@ -1,15 +1,17 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+
 import Header from "../../components/Header";
-import { Typography } from "@mui/material";
 import { XButton } from "../../components/Styled";
 
 const Main = () => {
     return (
         <Stack
             sx={{
-                backgroundImage: `url(${require('../../assets/imgs/mainBg.png').default})`,
-                backgroundSize: '100% 100%'
+                backgroundImage: `url(${require('../../assets/imgs/bg/mainBg.png').default})`,
+                backgroundSize: '100% 100%',
+                py: '0px !important'
             }}
         >
             <Header />
@@ -24,7 +26,6 @@ const Main = () => {
                     sx={{
                         fontSize: theme => theme.fontSize.xxl,
                         color: theme => theme.colors.white,
-                        fontFamily: 'Poppins',
                         textAlign: 'center',
                         fontWeight: 800,
                     }}
@@ -33,9 +34,8 @@ const Main = () => {
                 </Typography>
                 <Typography
                     sx={{
-                        fontSize: theme => theme.fontSize.xl,
+                        fontSize: theme => theme.fontSize.lg,
                         color: theme => theme.colors.white,
-                        fontFamily: 'Poppins',
                         textAlign: 'center',
                         fontWeight: 500,
                     }}
