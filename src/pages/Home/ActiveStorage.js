@@ -1,10 +1,14 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { CardB_info } from "../../config";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 import { CardA } from "../../components/Card";
+import { XLButton } from "../../components/Styled";
+import { CardB_info } from "../../config";
 
 const ActiveStorage = () => {
+    const tablet = useMediaQuery('(min-width:1400px)');
     return (
         <Stack
             sx={{
@@ -12,7 +16,7 @@ const ActiveStorage = () => {
                 backgroundImage: `url(${require('../../assets/imgs/bg/Rectangle_8.png').default})`,
                 backgroundSize: '100% 100%'
             }}
-            spacing={8}
+            spacing={tablet ? 15 : 10}
         >
             <Stack alignItems='center' spacing={1}>
                 <Typography
@@ -53,6 +57,9 @@ const ActiveStorage = () => {
                         </Stack>
                     ))
                 }
+            </Stack>
+            <Stack alignItems='center'>
+                <XLButton>View More Listings</XLButton>
             </Stack>
         </Stack>
     )

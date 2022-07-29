@@ -9,15 +9,16 @@ export const CardA = ({ data }) => {
         <Stack
             sx={{
                 background: theme => theme.colors.cardBg,
-                p: 3,
+                p: '22px',
                 borderRadius: '10px',
                 width: '100%',
                 '& .cardImg': {
                     height: theme => theme.isTablet ? 280 : 400,
+                    width: '100%',
                     borderRadius: 4
                 }
             }}
-            spacing={3}
+            spacing={5}
         >
             <img className="cardImg" src={require(`../assets/imgs/cards/${data.photo}`).default} />
             <Typography sx={{ fontSize: theme => theme.fontSize.lxl, fontWeight: 600 }}>{data.name}</Typography>

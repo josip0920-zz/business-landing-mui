@@ -27,6 +27,21 @@ export const XButton = styled((props) => (
     }
 }))
 
+export const XLButton = styled((props) => (
+    <Button variant='inherit' {...props} />
+))(({ theme }) => ({
+    color: theme.colors.gray,
+    background: theme.colors.yellow,
+    fontSize: theme.fontSize.lg,
+    fontWeight: 600,
+    height: 80,
+    paddingLeft: 80,
+    paddingRight: 80,
+    '&:hover': {
+        background: theme.colors.yellow
+    }
+}))
+
 export const MButton = styled((props) => (
     <Button variant='inherit' {...props} />
 ))(({ theme }) => ({
