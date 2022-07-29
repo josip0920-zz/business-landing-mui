@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
 // Import Swiper styles
 import "swiper/swiper.scss";
 import 'swiper/modules/pagination/pagination.scss';
-import { CardA } from "../../components/Card";
+import { CardA, CardC } from "../../components/Card";
 import { CardA_info } from "../../config";
 
 const Slider = () => {
@@ -48,7 +48,15 @@ const Slider = () => {
                 >
                     {
                         CardA_info.map((item, index) => (
-                            <SwiperSlide key={index}><CardA data={item} /></SwiperSlide>
+                            <SwiperSlide key={index}>
+                                {
+                                    index == 0 ? (
+                                        <CardC data={item} />
+                                    ) : (
+                                        <CardA data={item} />
+                                    )
+                                }
+                            </SwiperSlide>
                         ))
                     }
                 </Swiper>

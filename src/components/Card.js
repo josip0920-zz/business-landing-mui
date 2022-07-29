@@ -51,6 +51,53 @@ export const CardA = ({ data }) => {
     )
 }
 
+export const CardC = ({ data }) => {
+
+    return (
+        <Stack
+            sx={{
+                background: theme => theme.colors.cardBg,
+                p: '22px',
+                borderRadius: '10px',
+                width: '100%',
+                '& .cardImg': {
+                    height: theme => theme.isTablet ? 280 : 350,
+                    width: '100%',
+                    borderRadius: 4,
+                }
+            }}
+            spacing={5}
+        >
+            <img className="cardImg" src={require(`../assets/imgs/cards/${data.photo}`).default} />
+            <Stack spacing={1}>
+                <Stack direction='row' alignItems='center' spacing={1}>
+                    <img width='26' height='26' src={require(`../assets/imgs/icons/location.svg`).default} />
+                    <Typography sx={{ fontSize: theme => theme.fontSize.lxl, fontWeight: 600 }}>{data.location}</Typography>
+                </Stack>
+                <Stack direction='row'>
+                    <Stack flexGrow={1} spacing={2}>
+                        <Stack direction='row' alignItems="center" spacing={1}>
+                            <img width='20' height='20' src={require(`../assets/imgs/icons/office.svg`).default} />
+                            <Typography sx={{ fontSize: theme => theme.fontSize.sm }} noWrap>Total Units: {data.units}</Typography>
+                        </Stack>
+                        <Stack direction='row' alignItems="center" spacing={1}>
+                            <img width='22' height='22' src={require(`../assets/imgs/icons/occ.svg`).default} />
+                            <Typography sx={{ fontSize: theme => theme.fontSize.sm }} noWrap>Occupancy: {data.occupancy}%</Typography>
+                        </Stack>
+                        <Stack direction='row' alignItems="center" spacing={1}>
+                            <img width='18' height='18' src={require(`../assets/imgs/icons/size.svg`).default} />
+                            <Typography sx={{ fontSize: theme => theme.fontSize.sm }} noWrap>Size: {data.size}</Typography>
+                        </Stack>
+                    </Stack>
+                </Stack>
+            </Stack>
+            <Stack alignItems='center' sx={{ mt: '32px !important' }}>
+                <MButton>View More Detail</MButton>
+            </Stack>
+        </Stack>
+    )
+}
+
 export const CardB = ({ data }) => {
 
     return (
