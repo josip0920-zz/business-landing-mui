@@ -15,7 +15,7 @@ const Header = () => {
                     background: 'transparent',
                     boxShadow: 'none',
                     '& > div': {
-                        px: 15,
+                        px: 0,
                         py: 5
                     }
                 }}
@@ -23,7 +23,7 @@ const Header = () => {
                 <Toolbar>
                     <Stack sx={{ flexGrow: 1 }} direction='row' spacing={1}>
                         <HeaderIcon />
-                        <Typography sx={{ fontSize: theme => theme.fontSize.xl, fontWeight: 600, fontFamily: 'Inter' }}>
+                        <Typography sx={{ fontSize: theme => theme.fontSize.lg, fontWeight: 600, fontFamily: 'Inter' }}>
                             StorageConnect
                         </Typography>
                     </Stack>
