@@ -15,7 +15,8 @@ export const CardA = ({ data }) => {
                 '& .cardImg': {
                     height: theme => theme.isTablet ? 280 : 350,
                     width: '100%',
-                    borderRadius: 4
+                    borderRadius: 4,
+                    boxShadow: '0px 20px 30px rgba(1, 31, 109, 0.4)'
                 }
             }}
             spacing={5}
@@ -63,7 +64,8 @@ export const CardB = ({ data }) => {
                 '& .cardImg': {
                     height: theme => theme.isTablet ? 200 : 250,
                     width: '100%',
-                    borderRadius: '10px 10px 0px 0px'
+                    borderRadius: '10px 10px 0px 0px',
+                    boxShadow: '0px 10px 40px rgba(1, 31, 109, 0.4)'
                 }
             }}
             spacing={5}

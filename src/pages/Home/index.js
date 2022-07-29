@@ -9,6 +9,7 @@ import ActiveStorage from "./ActiveStorage";
 
 import './index.css';
 import Learn from "./Learn";
+import Contact from "./Contact";
 
 const Home = () => {
     return (
@@ -25,6 +26,7 @@ const Home = () => {
             <Sell />
             <Buy />
             <Learn />
+            <Contact />
         </Stack>
     )
 }
