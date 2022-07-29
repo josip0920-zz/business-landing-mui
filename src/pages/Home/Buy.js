@@ -1,11 +1,9 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { XButton } from "../../components/Styled";
 
 const Buy = () => {
-    const tablet = useMediaQuery('(min-width:1400px)');
 
     return (
         <Stack
