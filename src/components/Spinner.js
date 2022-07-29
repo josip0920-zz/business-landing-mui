@@ -1,10 +1,12 @@
-import React from "react";
+import * as React from 'react';
+import Stack from '@mui/material/Stack';
+import CircularProgress from '@mui/material/CircularProgress';
 
 const Spinner = () => {
-    return(
-        <div>
-            Spinner
-        </div>
+    return (
+        <Stack sx={{ height: '100%', pb: 10 }} alignItems='center' justifyContent='center' >
+            <CircularProgress sx={{ color: theme => theme.colors.green }} />
+        </Stack>
     )
 }
 
