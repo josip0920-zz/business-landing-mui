@@ -60,6 +60,8 @@ const ActiveStorage = () => {
             <Stack alignItems='center'>
                 <XLButton>View More Listings</XLButton>
             </Stack>
+            <img width={80} height={172} src={require('../../assets/imgs/circles/Ellipse1.png').default} style={{ position: 'absolute', right: 0, marginTop: 300 }} />
+            <img width={70} height={200} src={require('../../assets/imgs/circles/Ellipse2.png').default} style={{ position: 'absolute', left: 0, marginTop: 1000 }} />
         </Stack>
     )
 }
