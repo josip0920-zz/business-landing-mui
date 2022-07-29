@@ -69,7 +69,7 @@ export const CardD = ({ data }) => {
             spacing={5}
         >
             <img className="cardImg" src={require(`../assets/imgs/cards/${data.photo}`).default} />
-            <Stack spacing={1}>
+            <Stack spacing={2}>
                 <Stack direction='row' alignItems='center' spacing={1}>
                     <img width='26' height='26' src={require(`../assets/imgs/icons/location.svg`).default} />
                     <Typography sx={{ fontSize: theme => theme.fontSize.lxl, fontWeight: 600 }}>{data.location}</Typography>
@@ -115,7 +115,7 @@ export const CardC = ({ data }) => {
             spacing={5}
         >
             <img className="cardImg" src={require(`../assets/imgs/cards/${data.photo}`).default} />
-            <Stack spacing={1}>
+            <Stack spacing={2}>
                 <Stack direction='row' alignItems='center' spacing={1}>
                     <img width='26' height='26' src={require(`../assets/imgs/icons/location.svg`).default} />
                     <Typography sx={{ fontSize: theme => theme.fontSize.lxl, fontWeight: 600 }}>{data.location}</Typography>
