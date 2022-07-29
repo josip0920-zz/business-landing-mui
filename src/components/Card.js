@@ -16,7 +16,6 @@ export const CardA = ({ data }) => {
                     height: theme => theme.isTablet ? 280 : 350,
                     width: '100%',
                     borderRadius: 4,
-                    boxShadow: '0px 20px 30px rgba(1, 31, 109, 0.4)'
                 }
             }}
             spacing={5}
@@ -27,21 +26,21 @@ export const CardA = ({ data }) => {
                 <Stack flexGrow={1} spacing={2}>
                     <Stack direction='row' alignItems="center" spacing={1}>
                         <img width='22' height='22' src={require(`../assets/imgs/icons/location.svg`).default} />
-                        <Typography sx={{ fontSize: theme => theme.fontSize.sm }}>{data.location}</Typography>
+                        <Typography sx={{ fontSize: theme => theme.fontSize.sm }} noWrap>{data.location}</Typography>
                     </Stack>
                     <Stack direction='row' alignItems="center" spacing={1}>
                         <img width='18' height='18' src={require(`../assets/imgs/icons/size.svg`).default} />
-                        <Typography sx={{ fontSize: theme => theme.fontSize.sm }}>Size: {data.size}</Typography>
+                        <Typography sx={{ fontSize: theme => theme.fontSize.sm }} noWrap>Size: {data.size}</Typography>
                     </Stack>
                 </Stack>
                 <Stack flexGrow={1} spacing={2} >
                     <Stack direction='row' alignItems="center" spacing={1}>
                         <img width='20' height='20' src={require(`../assets/imgs/icons/office.svg`).default} />
-                        <Typography sx={{ fontSize: theme => theme.fontSize.sm }}>Total Units: {data.uints}</Typography>
+                        <Typography sx={{ fontSize: theme => theme.fontSize.sm }} noWrap>Total Units: {data.uints}</Typography>
                     </Stack>
                     <Stack direction='row' alignItems="center" spacing={1}>
                         <img width='22' height='22' src={require(`../assets/imgs/icons/occ.svg`).default} />
-                        <Typography sx={{ fontSize: theme => theme.fontSize.sm }}>Occupancy: {data.occupancy}%</Typography>
+                        <Typography sx={{ fontSize: theme => theme.fontSize.sm }} noWrap>Occupancy: {data.occupancy}%</Typography>
                     </Stack>
                 </Stack>
             </Stack>
@@ -61,11 +60,11 @@ export const CardB = ({ data }) => {
                 p: '5px',
                 borderRadius: '15px',
                 width: '100%',
+                boxShadow: '0px 10px 40px rgba(1, 31, 109, 0.4)',
                 '& .cardImg': {
                     height: theme => theme.isTablet ? 200 : 250,
                     width: '100%',
                     borderRadius: '10px 10px 0px 0px',
-                    boxShadow: '0px 10px 40px rgba(1, 31, 109, 0.4)'
                 }
             }}
             spacing={5}
@@ -78,36 +77,15 @@ export const CardB = ({ data }) => {
                 >
                     <Stack direction='row' alignItems="center" spacing={0.5} sx={{ width: '40%' }}>
                         <img width='22' height='22' src={require(`../assets/imgs/icons/time.svg`).default} />
-                        <Typography
-                            sx={{
-                                fontSize: theme => theme.fontSize.xm,
-                                overflow: 'hidden',
-                                textOverflow: 'ellipsis',
-                                whiteSpace: 'nowrap'
-                            }}
-                        >{data.time}</Typography>
+                        <Typography sx={{ fontSize: theme => theme.fontSize.xm }} noWrap>{data.time}</Typography>
                     </Stack>
                     <Stack direction='row' alignItems="center" spacing={0.5} sx={{ width: '30%' }}>
                         <img width='20' height='20' src={require(`../assets/imgs/icons/pen.svg`).default} />
-                        <Typography
-                            sx={{
-                                fontSize: theme => theme.fontSize.xm,
-                                overflow: 'hidden',
-                                textOverflow: 'ellipsis',
-                                whiteSpace: 'nowrap'
-                            }}
-                        >{data.status}</Typography>
+                        <Typography sx={{ fontSize: theme => theme.fontSize.xm }} noWrap>{data.status}</Typography>
                     </Stack>
                     <Stack direction='row' alignItems="center" spacing={0.5} sx={{ width: '30%' }}>
                         <img width='25' height='25' src={require(`../assets/imgs/${data.ownerPhoto}`).default} />
-                        <Typography
-                            sx={{
-                                fontSize: theme => theme.fontSize.xm,
-                                overflow: 'hidden',
-                                textOverflow: 'ellipsis',
-                                whiteSpace: 'nowrap'
-                            }}
-                        >{data.owner}</Typography>
+                        <Typography sx={{ fontSize: theme => theme.fontSize.xm }} noWrap>{data.owner}</Typography>
                     </Stack>
                 </Stack>
                 <Stack alignItems='center'>
