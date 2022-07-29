@@ -192,12 +192,6 @@ const Footer = () => {
                         anchorEl={anchorEl}
                         open={open}
                         onClose={handleClose}
-                        anchorOrigin={{
-                            vertical: 'top',
-                        }}
-                        transformOrigin={{
-                            vertical: 'top',
-                        }}
                         PaperProps={{
                             style: {
                                 maxHeight: ITEM_HEIGHT * 4.5,
