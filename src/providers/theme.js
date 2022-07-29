@@ -43,7 +43,9 @@ const MaterialThemeProvider = ({ children }) => {
             yellow: '#FFCE31',
             gray: 'rgba(0, 1, 3, 0.7)',
             cardBg: '#F6F8FD',
-            blue: '#1849C6'
+            blue: '#1849C6',
+            darkBlue: '#021850',
+            sellBg: '#E8EFFF'
         },
         isMobile: !mobile,
         isTablet: !tablet
