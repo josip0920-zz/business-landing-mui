@@ -17,7 +17,7 @@ const Sell = () => {
                 overflow: 'hidden'
             }}
         >
-            <Stack justifyContent='center' sx={{ width: '50%' }} spacing={8}>
+            <Stack justifyContent='center' sx={{ width: '50%', mb: 10 }} spacing={8}>
                 <Stack spacing={2}>
                     <Typography
                         sx={{
@@ -59,6 +59,7 @@ const Sell = () => {
                 <img src={require('../../assets/imgs/bg/pngwing.png').default} width="80%" style={{ marginRight: 10 }} />
                 <img src={require('../../assets/imgs/bg/pngwing2.png').default} height={tablet ? 430 : 320} width="100%" style={{ marginTop: tablet ? -430 : -320 }} />
             </Stack>
+            <img width={120} height={172} src={require('../../assets/imgs/circles/Ellipse3.png').default} style={{ position: 'absolute', left: 0, marginTop: tablet ? 590 : 370 }} />
         </Stack>
     )
 }
