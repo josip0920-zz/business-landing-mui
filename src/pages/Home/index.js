@@ -1,11 +1,25 @@
 import React from "react";
+import Stack from "@mui/material/Stack";
+
 import Main from "./main";
+import Slider from "./Slider";
+import ActiveStorage from "./ActiveStorage";
+
+import './index.css';
 
 const Home = () => {
     return (
-        <div>
+        <Stack
+            sx={{
+                '& > div': {
+                    p: theme => theme.custom.containerPadding
+                }
+            }}
+        >
             <Main />
-        </div>
+            <Slider />
+            <ActiveStorage />
+        </Stack>
     )
 }
 
