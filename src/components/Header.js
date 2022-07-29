@@ -21,7 +21,7 @@ const Header = () => {
                 }}
             >
                 <Toolbar>
-                    <Stack sx={{ flexGrow: 1 }} direction='row' spacing={1}>
+                    <Stack sx={{ flexGrow: 1 }} direction='row' spacing={1} alignItems='center'>
                         <HeaderIcon />
                         <Typography sx={{ fontSize: theme => theme.fontSize.lg, fontWeight: 600, fontFamily: 'Inter' }}>
                             StorageConnect
