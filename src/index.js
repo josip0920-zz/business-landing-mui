@@ -5,7 +5,6 @@ import ReactDOM from 'react-dom';
 import MaterialThemeProvider from "./providers/theme";
 import MuiSnackbarProvider from "./providers/snackbar";
 import NotificationProvider from "./providers/notification";
-import Web3Provider from "./providers/web3";
 import './assets/scss/index.scss';
 import Spinner from "./components/Spinner";
 
@@ -16,13 +15,11 @@ ReactDOM.render(
         <MaterialThemeProvider>
             <MuiSnackbarProvider>
                 <NotificationProvider>
-                    <Web3Provider>
-                        <Suspense
-                            fallback={<Spinner />}
-                        >
-                            <App />
-                        </Suspense>
-                    </Web3Provider>
+                    <Suspense
+                        fallback={<Spinner />}
+                    >
+                        <App />
+                    </Suspense>
                 </NotificationProvider>
             </MuiSnackbarProvider>
         </MaterialThemeProvider>
